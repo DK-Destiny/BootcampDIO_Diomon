@@ -9,8 +9,8 @@ DIOmon é um jogo de NFTs colecionáveis e batalhas, desenvolvido em Solidity. C
 
 Este contrato inteligente permite a criação de monstros digitais chamados **DIOmons**, cada um representado como um token não fungível (NFT). Os jogadores podem:
 
-- ✅ Criar DIOmons (apenas o proprietário do jogo).
-- ✅ Realizar batalhas entre seus DIOmons.
+- ✅ Criar DIOmons.
+- ✅ Realizar batalhas entre eles.
 - ✅ Evoluir seus DIOmons, aumentando o nível após cada batalha.
 
 ---
@@ -55,46 +55,6 @@ Cada DIOmon possui:
 
 - O endereço que faz o deploy do contrato é definido como `gameOwner`.
 - Apenas o `gameOwner` pode criar novos DIOmons.
-
----
-
-## 🏗️ Deploy
-
-### Requisitos
-- Node.js
-- Hardhat, Remix, Foundry ou outra ferramenta de desenvolvimento para Ethereum.
-
-### Instalação das dependências:
-```bash
-npm install @openzeppelin/contracts
-```
-
-### Compilação
-```bash
-npx hardhat compile
-```
-
-### Deploy no Hardhat ou Remix.
-
----
-
-## 🔥 Exemplo de Interação
-
-### Criar um novo DIOmon:
-```solidity
-createNewDiomon("Dracomon", 0xAbC123..., "https://ipfs.io/ipfs/....");
-```
-
-### Realizar uma batalha:
-```solidity
-battle(1, 3);
-```
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
 ---
 
